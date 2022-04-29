@@ -1,7 +1,5 @@
 class Solution {
     public String interpret(String command) {
-        command = command.replace("()", "o");
-        return command.replace("(al)", "al");
-        
+        return command.replace("(al)", "al").replace("()", "o");
     }
 }
